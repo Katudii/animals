@@ -8,7 +8,7 @@ class Animal {
     }
 }
 
-class Dog extends animal {
+class Dog extends Animal {
     constructor() {
         
     }
@@ -18,7 +18,7 @@ class Dog extends animal {
     }
 }
 
-class Cat extends animal {
+class Cat extends Animal {
     constructor() {
         
     }
@@ -30,17 +30,17 @@ class Cat extends animal {
 
 class Home {
     #animals = []
-    constructor(animal){
-        this.animal = animal
+    constructor(Animal){
+        this.Animal = Animal
     }
 
-    adoptPet(animal){
-        this.#animals.push[animal]
+    adoptPet(Animal){
+        this.#animals.push[Animal]
     }
 
     makeAllSounds(){
-        this.#animals.forEach((animal , index)=>{
-            console.log(animal.sound)
+        this.#animals.forEach((Animal , index)=>{
+            console.log(Animal.sound)
         })
 
     }
