@@ -2,6 +2,10 @@ class Animal {
     constructor(name) {
         this.name = name
     }
+
+    eat(){
+        console.log(`${this.name} eats`)
+    }
 }
 
 class Dog extends animal {
